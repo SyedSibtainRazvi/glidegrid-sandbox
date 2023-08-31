@@ -1,4 +1,4 @@
 .sheet {
-  display: flex;
-  margin: 4rem;
+  padding: 4rem;
+  height: 100vh;
 }
