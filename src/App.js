@@ -40,7 +40,39 @@ function App() {
           kind: GridCellKind.Text,
           data: comment.body,
           allowOverlay: true,
-          displayData: comment.body,
+          displayData: comment.email,
+          editor: "text",
+        };
+      } else if (col === 3) {
+        return {
+          kind: GridCellKind.Text,
+          data: comment.id,
+          allowOverlay: true,
+          displayData: comment.email,
+          editor: "text",
+        };
+      } else if (col === 4) {
+        return {
+          kind: GridCellKind.Text,
+          data: comment.id,
+          allowOverlay: true,
+          displayData: comment.email,
+          editor: "text",
+        };
+      } else if (col === 5) {
+        return {
+          kind: GridCellKind.Text,
+          data: comment.id,
+          allowOverlay: true,
+          displayData: comment.email,
+          editor: "text",
+        };
+      } else if (col === 6) {
+        return {
+          kind: GridCellKind.Text,
+          data: comment.id,
+          allowOverlay: true,
+          displayData: comment.email,
           editor: "text",
         };
       }
@@ -53,6 +85,10 @@ function App() {
     { title: "Name", width: 500 },
     { title: "Email", width: 500 },
     { title: "Body", width: 500 },
+    { title: "Test 1", width: 500 },
+    { title: "Test 2", width: 500 },
+    { title: "Test 3", width: 500 },
+    { title: "Test 4", width: 500 },
   ];
 
   const numRows = dataRows.length;
@@ -63,6 +99,8 @@ function App() {
         getCellContent={getContent}
         columns={columns}
         rows={numRows}
+        smoothScrollY={true}
+        smoothScrollX={true}
       />
     </div>
   );
